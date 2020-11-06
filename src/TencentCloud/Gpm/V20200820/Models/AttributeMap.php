@@ -20,15 +20,15 @@ use TencentCloud\Common\AbstractModel;
 /**
  * 玩家属性字典类型值
  *
- * @method string getKey() 获取属性字典 key
- * @method void setKey(string $Key) 设置属性字典 key
+ * @method string getKey() 获取属性字典 key [a-zA-Z0-9-\.]*
+ * @method void setKey(string $Key) 设置属性字典 key [a-zA-Z0-9-\.]*
  * @method integer getValue() 获取属性字典 value
  * @method void setValue(integer $Value) 设置属性字典 value
  */
 class AttributeMap extends AbstractModel
 {
     /**
-     * @var string 属性字典 key
+     * @var string 属性字典 key [a-zA-Z0-9-\.]*
      */
     public $Key;
 
@@ -38,7 +38,7 @@ class AttributeMap extends AbstractModel
     public $Value;
 
     /**
-     * @param string $Key 属性字典 key
+     * @param string $Key 属性字典 key [a-zA-Z0-9-\.]*
      * @param integer $Value 属性字典 value
      */
     function __construct()
